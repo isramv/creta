@@ -495,7 +495,7 @@ fachada, etc..)
                   <h1>Contacto</h1>
                   <h2>Si tiene alguna inquietud o pregunta adicional no dude en
                     contactarnos.</h2>
-                  <h3><a href="mailto:creta.vecinos@gmail.com">creta.vecinos@gmail.com</a></h3>
+                  <a className='creta-contact-link' href="mailto:creta.vecinos@gmail.com">creta.vecinos@gmail.com</a>
                 </Col>
               </Row>
             </Container>

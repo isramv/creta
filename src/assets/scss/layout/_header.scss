@@ -51,7 +51,19 @@
 		}
 
         &.custom {
-          padding: 0;
+		  padding: 0;
+		  background-color: #fff;
+		  border-radius: 2px;
+
+		  h1,
+		  h2 {
+			color: #355161;	  
+		  }
+		  
+		  .site-title {
+			display: flex;
+			flex-direction: column;
+		  }
 
           .logo {
             width: 75px;
