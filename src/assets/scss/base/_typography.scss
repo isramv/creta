@@ -53,7 +53,7 @@ em, i {
 }
 
 p {
-  margin: 0 0 _size(element-margin) 0;
+  margin: 0 0 1em 0;
 
   &.content {
     -moz-columns: 20em 2;
@@ -196,9 +196,9 @@ hr {
     color: _palette($p, fg-bold);
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    color: _palette($p, fg-bold);
-  }
+  //h1, h2, h3, h4, h5, h6 {
+  //  color: _palette($p, fg-bold);
+  //}
 
   blockquote {
     border-left-color: _palette($p, border);
@@ -215,3 +215,38 @@ hr {
 }
 
 @include color-typography;
+
+h4 {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: row;
+
+  .rating {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 15px;
+    line-height: 22px;
+  }
+}
+
+.creta-image {
+  max-width: 100%;
+  height: auto;
+}
+
+#main #first {
+  h2 {
+    color: black;
+  }
+}
+
+#main {
+  h1 {
+    color: black;
+  }
+}
