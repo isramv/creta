@@ -5,6 +5,8 @@ import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
 import BeautyStars from "beauty-stars/dist";
+import {Container, Row, Col} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap-grid.css'
 
 class Index extends React.Component {
   constructor(props) {
@@ -37,37 +39,36 @@ class Index extends React.Component {
 
         <div id="main">
           <section id="intro" className="main">
-            <div className="spotlight">
-              <div className="content">
-                <header className="major">
+            <Container>
+              <Row>
+                <Col xs={12} md={6}>
                   <h1>Análisis de Coto</h1>
                   <h2>Creta Residencial</h2>
                   <BeautyStars value={3} size={20}/>
-                </header>
-                <p>
-                  El presente sitio muestra un análisis con información 100% verídica y recabada
-                  a través encuestas y basada en la experiencia y percepción de los a los actuales
-                  habitantes del Coto Creta Residencial con el objetivo de apoyar y facilitar la
-                  información a nuevos interesados.
-                </p>
-              </div>
-            </div>
+                </Col>
+                <Col xs={12} md={6}>
+                  <p>
+                    El presente sitio muestra un análisis con información 100% verídica y recabada
+                    a través encuestas y basada en la experiencia y percepción de los a los actuales
+                    habitantes del Coto Creta Residencial con el objetivo de apoyar y facilitar la
+                    información a nuevos interesados.
+                  </p>
+                </Col>
+              </Row>
+            </Container>
           </section>
 
           <section id="first" className="main special">
             <header className="major">
-              <h2>Contacto</h2>
+              <h2>Ambitos a analizar:</h2>
             </header>
-            <ul className="features">
-              <li>
-                <h3>Información acerca del condominio</h3>
-                <p>
-                  Si usted require de más información acerca del condominio por favor contáctenos en:
-                  <br/>
-                  <b>creta.vecinos@gmail.com</b>
-                </p>
-              </li>
-            </ul>
+            <div>
+              <strong>TOTAL DE Casas Habitadas : 45</strong>
+              <br/>
+              <strong>TOTAL DE Respuestas: 43</strong>
+              <p>Encuesta al 21 de Ago de 2020</p>
+            </div>
+
           </section>
 
           {/*<section id="second" className="main special">*/}
