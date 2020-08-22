@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
+    "beauty-stars": "^1.1.0",
     "gatsby": "^2.15.14",
     "gatsby-cli": "^2.12.87",
     "gatsby-plugin-manifest": "^2.2.16",

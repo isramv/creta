@@ -11,7 +11,7 @@ class Generic extends React.Component {
 
     return (
       <Layout>
-        <Helmet title="Generic Page Title" />
+        <Helmet title="Encuesta vecinal." />
         <HeaderEncuesta />
         <NavInterior/>
         <div id="main">

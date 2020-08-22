@@ -50,6 +50,15 @@
 			}
 		}
 
+        &.custom {
+          padding: 0;
+
+          .logo {
+            width: 75px;
+            height: auto;
+          }
+        }
+
 		@include breakpoint(large) {
 			@include padding(4em, 4em, (0, 0, -2em, 0));
 

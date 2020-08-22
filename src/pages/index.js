@@ -4,6 +4,7 @@ import {Waypoint} from 'react-waypoint'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
+import BeautyStars from "beauty-stars/dist";
 
 class Index extends React.Component {
   constructor(props) {
@@ -39,11 +40,15 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Introducción</h2>
+                  <h1>Análisis de Coto</h1>
+                  <h2>Creta Residencial</h2>
+                  <BeautyStars value={3} size={20}/>
                 </header>
                 <p>
-                  Somos una organización sin fines de lucro, creada para fomentar una convivencia armónica, para los
-                  habitantes de éste condominio.
+                  El presente sitio muestra un análisis con información 100% verídica y recabada
+                  a través encuestas y basada en la experiencia y percepción de los a los actuales
+                  habitantes del Coto Creta Residencial con el objetivo de apoyar y facilitar la
+                  información a nuevos interesados.
                 </p>
               </div>
             </div>
