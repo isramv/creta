@@ -146,6 +146,35 @@ basura...'/>
                 </Col>
               </Row>
             </Container>
+            <Container>
+              <Row>
+                <Col>
+                  <h1>Comentarios de Zona</h1>
+                  <div className="centered">
+                    <BeautyStars value={3} size={20}/><span className='rating'>3.0</span>
+                  </div>
+                  <ul  className='align-left'>
+                    <li>Huele muy feo y siempre están reparando alguna calle, hay topes que siguen sin repararse y daña los coches.</li>
+                    <li>Falta de alumbrado público así como en el condominio falta de luminosidad en nombre del condominio asi como señalización para llegar al mismo.... solo
+                    hay para sendas y otros mas.</li>
+                    <li>Es fresco, quizá algo de animales por ser nuevo y tener cerca campo.</li>
+                    <li>El ganado que en ocasiones tienen suelto en las vialidades públicas pueden ocasionar un accidente. Así mismo el mal olor que en ocaciones se alcanza a
+                    percibir de la planta de tratamiento.</li>
+                    <li>Falta mas seguridad y vigilancia</li>
+                    <li>El mal olor del ambiente a caño</li>
+                    <li>Hacen falta muchos servicios</li>
+                    <li>Luminarias apagadas en algunas áreas, falta de limpieza mucha malesa invadiendo zonas para caminar, malos olores.</li>
+                    <li>Olores muy fétidos todos los días si no es por la planta de tratamiento es por establos.</li>
+                    <li>Hay muchos perros de la calle que bajan hacia capital norte y juntos dan la inseguridad de que te puedan morder cuando sales a caminar/correr, y baja
+                    también mucha gente ajena a capital norte al parque central y dejan basura</li>
+                    <li>Falta más tiendas de autoservicio cerca</li>
+                    <li>Es muy desagradable el olor de la planta potibilizadora</li>
+                    <li>Consultar cómo disminuir el olor del canal de aguas de capital norte</li>
+                    <li>Problemas con un canal del Rio Blanco. Varios accesos a zonas de montaña o rurales.</li>
+                  </ul>
+                </Col>
+              </Row>
+            </Container>
           </section>
 
           {/*  <header className="major">*/}
