@@ -6,6 +6,9 @@ const Nav = (props) => (
     <nav id="nav" className={props.sticky ? 'alt' : ''}>
         <Scrollspy items={ ['intro', 'first', 'second', 'cta'] } currentClassName="is-active" offset={-300}>
             <li>
+              <a href="/encuesta">Encuesta</a>
+            </li>
+            <li>
                 <Scroll type="id" element="intro">
                     <a href="#">Introducción</a>
                 </Scroll>
@@ -15,16 +18,16 @@ const Nav = (props) => (
                     <a href="#">Contacto</a>
                 </Scroll>
             </li>
-            <li>
-                <Scroll type="id" element="second">
-                    <a href="#">Reglamento</a>
-                </Scroll>
-            </li>
-            <li>
-                <Scroll type="id" element="cta">
-                    <a href="#">Más información</a>
-                </Scroll>
-            </li>
+            {/*<li>*/}
+            {/*    <Scroll type="id" element="second">*/}
+            {/*        <a href="#">Reglamento</a>*/}
+            {/*    </Scroll>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*    <Scroll type="id" element="cta">*/}
+            {/*        <a href="#">Más información</a>*/}
+            {/*    </Scroll>*/}
+            {/*</li>*/}
         </Scrollspy>
     </nav>
 )
