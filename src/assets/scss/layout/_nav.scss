@@ -65,8 +65,9 @@
 				}
 				&.is-active {
 					a {
-						background-color: _palette(invert, bg);
+						background-color: #4c7991;
 						box-shadow: none;
+						color: #fff;
 					}
 				}
 			}

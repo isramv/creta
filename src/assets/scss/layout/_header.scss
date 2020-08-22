@@ -17,6 +17,7 @@
 		p {
 			font-size: 1.25em;
 			letter-spacing: _font(letter-spacing);
+          margin-bottom: 10px;
 		}
 
 		&.alt {
@@ -48,6 +49,27 @@
 				}
 			}
 		}
+
+        &.custom {
+		  padding: 0;
+		  background-color: #fff;
+		  border-radius: 2px;
+
+		  h1,
+		  h2 {
+			color: #355161;	  
+		  }
+		  
+		  .site-title {
+			display: flex;
+			flex-direction: column;
+		  }
+
+          .logo {
+            width: 75px;
+            height: auto;
+          }
+        }
 
 		@include breakpoint(large) {
 			@include padding(4em, 4em, (0, 0, -2em, 0));
@@ -114,3 +136,9 @@
 			}
 		}
 	}
+
+  .centered {
+    ul {
+      justify-content: center;
+    }
+  }
