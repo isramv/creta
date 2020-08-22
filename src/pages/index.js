@@ -10,6 +10,10 @@ import 'bootstrap/dist/css/bootstrap-grid.css'
 import Rating from "../components/Rating";
 import mapaCreta from '../assets/images/mapa-capital-norte.jpg';
 import vistaSatelital from '../assets/images/vista-satelital-coto-creta-residencial.jpg';
+import fotoCasa from '../assets/images/foto-casa-creta.jpg';
+import grafica from '../assets/images/grafica-vicios-ocultos-creta-residencial.jpg';
+import pared from '../assets/images/pared-agrietada.jpg';
+import entrada from '../assets/images/creta-main-image.jpg';
 
 class Index extends React.Component {
   constructor(props) {
@@ -41,8 +45,24 @@ class Index extends React.Component {
         <Nav sticky={this.state.stickyNav}/>
 
         <div id="main">
+          <section>
+            <Container>
+              <Row>
+                <Col>
+                  <img className='creta-image' src={entrada} alt='entrada al coto creta residencial'/>
+                  <div className='introduccion'>
+                    <p>
+                    Como Asamblea de vecinos creemos en la total transparencia y quedamos a entera disposición de quien
+                     la requiera para preguntas adicionales en una decisión tan importante como la adquisición de un patrimonio/inversión.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </section>
           <section id="intro" className="main">
             <Container>
+              
               <Row>
                 <Col xs={12} md={6}>
                   <h1>Análisis de Coto</h1>
@@ -235,7 +255,7 @@ Respeto, atención, tiempos de respuesta, compromiso, transparencia, etc...'/>
             <Container>
               <Row>
                 <Col>
-                  <h1>Comentarios del. COTO</h1>
+                  <h1>Comentarios del COTO</h1>
                   <div className="centered">
                     <BeautyStars value={2} size={20}/><span className='rating'>2.0</span>
                   </div>
@@ -297,6 +317,185 @@ Respeto, atención, tiempos de respuesta, compromiso, transparencia, etc...'/>
                     <li>Hay muchos detalles muy malos en los terminados de las calles</li>
                     <li>Compraron barato a Hito de Capital Norte, y tienen vicios de diseño.</li>
                   </ul>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+
+          <section id="fourth" className="main special">
+            <Container>
+              <Row>
+                <Col>
+                  <h1>Análisis de CASAS</h1>
+                  <div className='centered'>
+                    <BeautyStars value={3} size={20}/>
+                  </div>
+                  <h3>3.0</h3>
+                </Col>
+              </Row>
+            </Container>
+            <Container className='align-left'>
+              <Row>
+                <Col md={6}>
+                  <Rating title='Diseño' ratingValue='4'
+                          description='Califique su percepción sobre el diseño de las casas y sus modelos'/>
+                  <Rating title='Distribución' ratingValue='4'
+                          description='Califique su percepción sobre el la distribución de las casas y sus modelos'/>
+                  <Rating title='Construcción' ratingValue='3'
+                          description='Califique la calidad de la ejecución del trabajo de construcción de las casas'/>
+                  <Rating title='Materiales' ratingValue='3' description='Califique su percepción sobre la calidad de los materiales usados para la construcción de las
+casas'/>
+                  <Rating title='Acabados' ratingValue='3'
+                          description='Califique su percepción sobre la calidad de los acabados de las casas'/>
+                  <Rating title='Modificaciones' ratingValue='3'
+                          description='Califique su percepción sobre el nivel de flexibilidad de hacer modificaciones a las casas post-
+venta'/>
+                </Col>
+                <Col md={6}>
+                  <img className='creta-image' src={fotoCasa} alt='foto casa creta resicencial.'/>
+                </Col>
+              </Row>
+            </Container>
+            <Container>
+              <Row>
+                <Col>
+                  <h1>Comentarios de las CASAS</h1>
+                  <div className="centered">
+                    <BeautyStars value={2} size={20}/><span className='rating'>2.0</span>
+                  </div>
+                  <ul className='align-left'>
+                    <li>12 reclamos, ya termino la garantia y aun no los completan; faltantes y deficiencias en el
+                      diseño e instalaciones.
+                    </li>
+                    <li>Las casas son bonitas pero tienen muchísimos detalles, y detalles muy basicos que si hubieran
+                      pasado por un proceso de pruebas correctas no hubieran sucedido.
+                    </li>
+                    <li>Muchos detalles de diseños en tuberias faltantes, vicios ocultos, calidad de algunos materiales
+                      y en general en la supervision de la ejecucion.
+                    </li>
+                    <li>Entragan demasiado rápido post firma, sin antes revisar a detalle la casa, con muchos defectos a
+                      mi entrega, poner el pasto postventa es feo por la suciedad que se genera,
+                      así como tener que esperar a que instalen estufa hornos, tuve fuga de gas ya que no estaba
+                      corroborado ese servicio hasta que llene tanque 2 veces sin percatarme que la
+                      fuga estaba en el área de lavado! Su resanados con yeso terribles por que se vuele agrietar la
+                      casa en cuestión de días, solo para economizar como constructora, y el
+                      pretexto es... ah lo que pasa que con el calor y frío así se hace! Pues cambie de material o
+                      método! Las casa no valen 2 pesos como para tener que estar llamando cada 2
+                      días y agrandar citas matutinas cuando uno tiene que trabajar para poder pagar gastos básicos de
+                      vivienda y vida! Falta de compromiso insisto por un grupo constructor
+                      tan grande, comparado con otros proyectos este parece que es el abandonado o al que menos interés
+                      le ponen
+                    </li>
+                    <li>Se daña con facilidad los muros y los pisos.</li>
+                    <li>Demasiadas reparaciones posteriores a la entrega.</li>
+                    <li>Me gusta mi casa solo que cuando venimos a verlas no vimos la calidad de construcción solo el
+                      diseño y por eso compramos.
+                    </li>
+                    <li>Pobre tiempo para dar solución</li>
+                    <li>Con muchos vicios ocultos</li>
+                    <li>Faltan muchos detalles de diseño en instalaciones y servicios.</li>
+                    <li>Tuvieron que remplazarnos por lo menos 23 lozas de porcelanato post entrega.</li>
+                  </ul>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+
+          <section id="fifth" className="main special">
+            <Container>
+              <Row>
+                <Col>
+                  <h1>Análisis de VICIOS Ocultos</h1>
+                  <h2>Tiempo de respuesta:</h2>
+                  <div className='centered'>
+                    <BeautyStars value={3} size={20}/>
+                  </div>
+                  <h3>3.0</h3>
+                  <h2>Calidad de ejecución</h2>
+                  <div className='centered'>
+                    <BeautyStars value={3} size={20}/>
+                  </div>
+                  <h3>3.0</h3>
+                  <img className='creta-image' src={grafica} alt="Grafica vicios ocultos creta"/>
+                  <h2 class="dark">Aspectos evaluados</h2>
+                  <ul className='align-left'>
+                    <li><strong>HUMEDAD</strong> ( baños, roof garden, cuartos, closets, ventanas, patio, cocina, cuarto
+                      de
+                      servicio, fachada, etc..)
+                    </li>
+                    <li><strong>FUGAS</strong> (Gas, Agua, Eléctricas, otros...)
+                    </li>
+                    <li><strong>ACABADOS</strong> ( baños, roof garden, cuartos, closets, ventanas, patio, cocina, cuarto de
+servicio, fachada, etc..)
+                    </li>
+                    <li><strong>INSTALACIONES</strong> (eléctricas, gas, agua, aire acondicionado, apagadores, líneas internas
+(internet) baños, roof garden, cuartos, closets, ventanas, patio, cocina, cuarto de servicio,
+fachada, etc..)
+                    </li>
+                  </ul>
+                  <img className='creta-image' src={pared} alt='foto casa creta resicencial.'/>
+                </Col>
+              </Row>
+            </Container>
+            <Container className='align-left'>
+              <Row>
+                <Col>
+                </Col>
+              </Row>
+            </Container>
+            <Container>
+              <Row>
+                <Col>
+                  <h1>Comentarios de VICIOS Ocultos</h1>
+                  <div className="centered">
+                    <BeautyStars value={3} size={20}/><span className='rating'>3.0</span>
+                  </div>
+                  <ul className='align-left'>
+                    <li>Mis problemas principales fueron fugas de gas, fugas de agua en baños , ninguna puerta cerraba y
+                      se tuvieron que ajustar los 3 cuartos, y
+                      muchos temas de humedad. Confirme vives en la casa te das cuenta de muchísimos detalles más
+                      pequeños como cuarteaduras y resanes
+                      hechos a la carrera. Muy mala experiencia hay muchos detalles.
+                    </li>
+                    <li>Aun continuan despues de 1 año (y los 5 meses del COVID, que no atendieron) no quisieron correr
+                      la garantía
+                    </li>
+                    <li>No lo terminan a la primera hay que seguir reagendando citas ensucian cada visita y dificl poder
+                      recibirlos ya que uno trabaja! No hay
+                      necesidad de estar momestandolos a cada rato si se entregará algo profesional y de calidad
+                    </li>
+                    <li>Muchos detalles</li>
+                    <li>Reparaciones superficiales entonces hay que estar reportando frecuentemente, a veces el tiempo
+                      de atención es tardado.
+                    </li>
+                    <li>Muy complicado y tardado la respuesta</li>
+                    <li>Dicho antes muchas reparaciones posteriores a la entrega</li>
+                    <li>Ya hemos reportado varías veces el mismo problema, lo vienen a arreglar y no queda bien.
+                      Deberían tener más cuidado al hacer los
+                      arreglos para que no haya tantos reportes.
+                    </li>
+                    <li>Procuran dar soluciones no adecuadas. En lugar de cambiar lo que esta dañado, solamente lo
+                      reparan y se excusan diciendo q así es la
+                      garantía. Me tuve q quedar con una puerta rota porque nunca aceptaron q esta mal instalada
+                    </li>
+                    <li>El piso estaba totalmente mal puesto de planta baja, azulejos levantados, nos cambiaron 23
+                      azulejos
+                    </li>
+                    <li>Desastre x el precio pagado</li>
+                  </ul>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+
+          <section id="sixth" className="main special">
+            <Container>
+              <Row>
+                <Col>
+                  <h1>Contacto</h1>
+                  <h2>Si tiene alguna inquietud o pregunta adicional no dude en
+                    contactarnos.</h2>
+                  <h3><a href="mailto:creta.vecinos@gmail.com">creta.vecinos@gmail.com</a></h3>
                 </Col>
               </Row>
             </Container>
